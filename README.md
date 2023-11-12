@@ -26,6 +26,10 @@ Executing the website involved navigating to the project directory through the c
 
 Facing privacy issues, especially the need to reconfigure settings after each workspace timeout, proved to be a persistent challenge. This not only impacted efficiency but also raised concerns about the overall security of the project.
 
+5. Unable to deploy project via Heroku
+![Heroku](youmatter/media/shop_images/heroku.png) 
+
+
 # User Experience - UX
 
 ## Aim 
