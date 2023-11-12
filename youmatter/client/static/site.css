@@ -1,0 +1,61 @@
+/* Headings and Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Pinyon+Script&display=swap');
+
+body 
+{ color: #ffffff;}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #484140;
+    
+}
+
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #484140;
+    
+    text-transform: uppercase;
+
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    color: #484140;
+    
+}
+
+#myCarousel {
+    max-width: auto; 
+    margin: auto; 
+  }
+
+  .carousel-item img {
+    height: 600px; 
+    object-fit: cover;
+    
+  }
