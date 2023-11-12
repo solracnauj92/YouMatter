@@ -1,12 +1,12 @@
 from django.db import models
 
 # Create your models here.
-class MenuItem(models.Model):
+class Item(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     image = models.ImageField(upload_to='shop_images/')
     price = models.DecimalField(max_digits=5, decimal_places=2)
-    category = models.ManyToManyField('Category', related_name='item')
+    category = models.ManyToManyField('Category', related_name='Item')
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -18,7 +18,7 @@ class Category(models.Model):
 class OrderModel(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     price = models.DecimalField(max_digits=7, decimal_places=2)
-    items = models.ManyToManyField('MenuItem', related_name='shop', blank=True)
+    items = models.ManyToManyField('Item', related_name='shop', blank=True)
     name = models.CharField(max_length=50, blank=True)
     email = models.CharField(max_length=50, blank=True)
     street = models.CharField(max_length=50, blank=True)
