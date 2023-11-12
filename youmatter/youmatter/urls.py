@@ -16,11 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from client.views import Index, community
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Index.as_view(), name='index'),
     path('community/', community.as_view(), name='community'),
-    path('community.html', community.as_view()),  # Add this line
-]
+    path('community.html', community.as_view()), 
+    ]    + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

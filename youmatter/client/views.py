@@ -11,3 +11,6 @@ class community(View):
     def get(self, request, *arg, **kwargs):
         return render(request, 'client/community.html')
 
+class Shop(View):
+    def get(self, request, *arg, **kwargs):
+        return render(request, 'client/shop.html', context)
