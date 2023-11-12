@@ -6,6 +6,26 @@ Despite careful planning, the project did not unfold as intended. Unfortunately,
 
 ![Kanban Board](youmatter/media/shop_images/kanban.png) 
 
+# Project Development Challenges
+
+During the development of this project, I encountered several technical challenges that impacted the workflow. Here are some of the notable issues faced:
+
+ 1. Library Installations and Data Loss
+
+One recurring challenge was the unexpected loss of project data, leading to the need for reinstalling all related libraries. This not only resulted in time-consuming setbacks but also disrupted the development flow for my main projects as well as my previous 2 drafts I praticed on. 
+
+ 2. Persistent Bug Fixes and Virtual Environment Issues
+
+Fixing the same bugs multiple times and dealing with the virtual environment disappearing became a common occurrence. This added an extra layer of complexity and hindered the stability of the development environment. Additionally, the need to recreate the virtual environment frequently disrupted the development process.
+
+ 3. Execution Workflow Complexity
+
+Executing the website involved navigating to the project directory through the command line (`cd` commands) to run the server using the `manage.py` script. This extra step in the workflow introduced unnecessary complexity and made the development environment less user-friendly.
+
+ 4. Privacy Concerns and Workspace Timeout
+
+Facing privacy issues, especially the need to reconfigure settings after each workspace timeout, proved to be a persistent challenge. This not only impacted efficiency but also raised concerns about the overall security of the project.
+
 # User Experience - UX
 
 ## Aim 
@@ -127,10 +147,48 @@ Explore the creativity and style of our merchandise designs crafted for this fic
 ![tshirt](youmatter/media/shop_images/tshirt.jpg) 
 
 
+# Django Admin
+
+![Django-admin](youmatter/media/shop_images/admin.png)
+
+Django admin is a feature in the Django web framework that allows You Matter administrators to manage the data. 
+
+It provides an easy-to-use interface that administrators can use to add, update, or delete items from the menu, track client orders, and manage database.
+
+Username: admin
+Password: admin123
+
+## Technologies used
+
+- HTML
+    - HTML is used to structure and use Bootstrap components by adding specific classes.
+- CSS
+    - CSS is used to style and personalise Bootstrap components used for the website
+- Python
+    - To provide the functionality to the site
+- Django
+    - Django was used o build the backend, it also enables rapid and secure development.
+- [Bootstrap v4](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+    - A set of pre-designed HTML, CSS, and JavaScript components was used to create responsive, mobile-first websites.
+- [Canva](https://www.canva.com/)
+    - Canva was used for:
+      - Granting copyright free images/graphics/videos
+      - Designing and testing visuals
+      - Resizing and downloading in PNG to support transparent background
+- [QuillBot](https://quillbot.com/)
+    - QuillBot was used to scan writings and alert any errors in grammar, spelling, punctuation as well as rephrase any research used for the website.
+- [User Persona](https://userpersona.dev/)
+    - The website helped to generate fictional characters to represent the website
+- GitHub
+    - Stores, manages, and track changes to the project code
+-Gitpod
+    - Online integrated development environment (IDE).
+    
 # Credits
 - Code institute Course Materials
 - W3 School
 - YouTube: Legion Script
 - YouTube: Programming with Mosh
 - Django Documentation 
-- FreeCodeCamp
+- YouTube: FreeCodeCamp
+
