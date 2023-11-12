@@ -18,12 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from client.views import Index, community
+from client.views import Index, Community, Dashboard
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Index.as_view(), name='index'),
-    path('community/', community.as_view(), name='community'),
-    path('community.html', community.as_view()), 
-    ]    + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('community/', Community.as_view(), name='community'),
+    path('community.html', Community.as_view()),
+    path('dashboard/', Dashboard.as_view(), name='dashboard'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

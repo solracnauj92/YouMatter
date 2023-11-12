@@ -1,15 +1,21 @@
 from django.shortcuts import render
 from django.views import View
 
+
 # Create your views here.
 
 class Index(View):
     def get(self, request, *arg, **kwargs):
         return render(request, 'client/index.html')
 
-class community(View):
+class Community(View):
     def get(self, request, *arg, **kwargs):
         return render(request, 'client/community.html')
+
+class Dashboard(View):
+    def get(self, request):
+        # Your view logic here
+        return render(request, 'youmatter/dashboard.html')
 
 from django.shortcuts import render
 from django.views import View

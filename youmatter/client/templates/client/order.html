@@ -1,0 +1,110 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<div class="container mb-5">
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-12 col-sm-12 p-4">
+            <form method="POST">
+                {% csrf_token %}
+
+                <section>
+                    <div class='container'>
+                        <div class='row justify-content-center mt-5'>
+                            <div class='col-md-6 col-sm-12 text-center'>
+                                <h1>
+                                    Items
+                                </h1>
+                            </div>
+                        </div>
+                </section>
+
+                {% for category in categories %}
+                <div class="pt-5">
+                    <h2>{{ category.title }}</h2>
+                    {% for item in category.items %}
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12">
+                            <img class="rounded" src="{{ item.image.url }}" width="150" height="150">
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="d-flex flex-row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" name="items[]" class="form-check-input"
+                                        value="{{ item.pk }}">
+                                    <label class="form-check-label">{{ item.name }}</label>
+                                </div>
+                                <p class="font-weight-bold pl-5">&nbsp; £{{ item.price }}</p>
+                            </div>
+                            <p>{{ item.description }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    {% endfor %}
+                </div>
+                {% endfor %}
+
+                categories = [
+                {'title': 'Clothing', 'items': clothing_items},
+                {'title': 'Office', 'items': office_items},
+                {'title': 'Bags', 'items': bags_items},
+                ]
+
+                <div class="form-group pt-3">
+                    <label for="name">Name</label>
+                    <input required class="form-control" type="text" placeholder="Your Name" name="name" />
+                </div>
+
+                <div class="form-group pt-3">
+                    <label for="name">Email Address</label>
+                    <input required class="form-control" type="text" placeholder="name@globalbites.com" name="email" />
+                </div>
+
+                <div class="form-group pt-3">
+                    <label for="name">Address</label>
+                    <input required class="form-control" type="text" placeholder="12 Main Street" name="street" />
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group pt-3">
+                            <label for="name">City</label>
+                            <input required class="form-control" type="text" placeholder="London" name="city" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group pt-3">
+                            <label for="name">Postcode</label>
+                            <input required class="form-control" type="text" placeholder="W3" name="postcode" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark mt-3" data-mdb-toggle="modal" data-mdb-target="#submitModal">
+                    Submit
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="submitModalLabel">Please Confirm</h5>
+                                <button type="button" class="btn-close" data-mdb-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-mdb-dismiss="modal">Back</button>
+                                <button type="submit" class="btn btn-dark">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
