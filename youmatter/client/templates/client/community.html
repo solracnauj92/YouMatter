@@ -1,0 +1,124 @@
+{% extends 'client/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="py-3">
+    <div class="container mb-3">
+        <div class="row text-center">
+            <h2>Upcoming events</h2>
+            <br><br><br>
+            <h3>Explore our events and meet like minded people.</h3>
+            <br><br>
+            <p>For people to connect, to challenge themselves and step out of their comfort zones. <br>
+                To grow and develop both professionally and personally or even just for pure fun!
+                <br> If you can't join in person, check our
+                online events too.</p>
+            <p>If you are looking to <b>host an event</b>, get in touch with our team to set it up for you!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Events Cards-->
+
+<div class="container">
+    <div class="row d-flex align-items-stretch pb-5">
+        <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="assets/images/brand.png" class="card-img-top" alt="brand">
+                <div class="card-body text-center">
+                    <h4 class="card-title">
+                        ONLINE - Marketing Yourself</h4>
+                    <p class="card-text">
+                        Level up your marketing skills and learn accessible, achievable ways to make content
+                        that stands out!
+                    </p>
+                    <a href="https://www.eventbrite.co.uk/" target="_blank" aria-label="Book Marketing Brand Event"
+                        class="btn btn-dark">Book</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="assets/images/artgallery.png" class="card-img-top" alt="art-gallery">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Gallery Friday Lates</h4>
+                    <p class="card-text">
+                        National Gallery Friday Lates offer creativity, inspiration, conversation in a social
+                        space where everyone is welcome.
+                    </p>
+                    <a href="https://www.eventbrite.co.uk/" target="_blank" aria-label="Book to go to the Gallery"
+                        class="btn btn-dark">Book</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="assets/images/meditation.png" class="card-img-top" alt="meditation">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Meditation</h4>
+                    <p class="card-text">
+                        Instant relaxation and deep peace through meditation. Free Guided Meditation
+                        class. Easy, practical and useful to manage stress.
+                    </p>
+                    <a href="https://www.eventbrite.co.uk/" target="_blank"
+                        aria-label="Book for Meditation Group Event" class="btn btn-dark">Book</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row d-flex align-items-stretch pb-5">
+        <div class="col-lg-4 align-items-stretch">
+            <div class="card">
+                <img src="assets/images/paintinggroup.png" class="card-img-top" alt="painting-group">
+                <div class="card-body text-center">
+                    <h4 class="card-title">The Creative Cure: Mental Health & Art Workshop</h4>
+                    <p class="card-text">
+                        Find a creative cure through art for the everyday stress & anxiety. Find inspiration and
+                        spark new creative ideas.Bring new energy to your work!
+                    </p>
+                    <a href="https://www.eventbrite.co.uk/" target="_blank"
+                        aria-label="Book a painting Workshop Event" class="btn btn-dark">Book</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="assets/images/friends-hiking.png" class="card-img-top" alt="friends-hiking">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Hiking through and around London</h4>
+                    <p class="card-text">
+                        We hike around London to catch a glimpse of the beautiful
+                        lakes, parks and nature around us. An escape from the busy and noisy city!
+                    </p>
+                    <a href="https://www.eventbrite.co.uk/" target="_blank" aria-label="Book a Hiking Event"
+                        class="btn btn-dark">Book</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="assets/images/workshop.png" class="card-img-top" alt="workshop">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Mental Health in Museums & Galleries</h4>
+                    <p class="card-text">
+                        How can museums and galleries work collaboratively, creatively, and equitably
+                        with people living with mental health conditions?
+                    </p>
+                    <a href="https://www.eventbrite.co.uk/" target="_blank"
+                        aria-label="Book a Mental Health in Museum and Gallery Workshop"
+                        class="btn btn-dark">Book</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock content %}

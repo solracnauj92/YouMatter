@@ -7,7 +7,7 @@ class Index(View):
     def get(self, request, *arg, **kwargs):
         return render(request, 'client/index.html')
 
-class About(View):
+class community(View):
     def get(self, request, *arg, **kwargs):
         return render(request, 'client/community.html')
 

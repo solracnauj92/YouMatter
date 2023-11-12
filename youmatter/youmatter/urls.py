@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from client.views import Index
+from client.views import Index, community
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Index.as_view(), name='index'),
+    path('community/', community.as_view(), name='community'),
+    path('community.html', community.as_view()),  # Add this line
 ]
